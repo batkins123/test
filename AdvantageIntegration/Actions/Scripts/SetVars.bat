@@ -1,0 +1,11 @@
+set top_dir=C:\Work\AdvantageIntegration
+set act_dir=C:\Work\AdvantageIntegration\Actions
+set csc_dir=C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+set pkg_dir=C:\Work\AdvantageIntegration\Packages
+set src_dir=C:\Work\AdvantageIntegration\Source
+set ref_dir=C:\Work\AdvantageIntegration\References
+set out_dir=C:\Work\AdvantageIntegration\Output
+set log_dir=C:\Work\AdvantageIntegration\Logs
+set lib1_name=AdvantageIntegrationData.dll
+set lib2_name=AdvantageIntegrationFacade.dll
+set exe_name=AdvantageIntegration.exe
