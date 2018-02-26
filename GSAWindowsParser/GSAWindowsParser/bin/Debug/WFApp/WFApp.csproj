@@ -1,0 +1,1548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D5ECE99-D986-4C15-BB98-86ABAE9C5C91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WFApp</RootNamespace>
+    <AssemblyName>WFApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DataStore.cs" />
+    <Compile Include="DataWindow.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="grnshld.cs" />
+    <Compile Include="m_base.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_claim_sheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_client_offg_structure_popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_dental_kfi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_dental_kfi_balance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_dental_ocr_verification.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_menu_navigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_popuplegend.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_sheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tblview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_cloffering.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_coverage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_cvgcategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_ptecategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_pterule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_pterules.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_ptexceptions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="m_tvnode_rptecategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nc_msg.cs" />
+    <Compile Include="n_banner_agent.cs" />
+    <Compile Include="n_baseitem.cs" />
+    <Compile Include="n_benefit.cs" />
+    <Compile Include="n_caller_profile.cs" />
+    <Compile Include="n_caller_profile_detail.cs" />
+    <Compile Include="n_category.cs" />
+    <Compile Include="n_client.cs" />
+    <Compile Include="n_clobenefit.cs" />
+    <Compile Include="n_clocategory.cs" />
+    <Compile Include="n_cloffering.cs" />
+    <Compile Include="n_clrelatedrule.cs" />
+    <Compile Include="n_clrelatedrules.cs" />
+    <Compile Include="n_codes.cs" />
+    <Compile Include="n_container.cs" />
+    <Compile Include="n_coverage.cs" />
+    <Compile Include="n_cst_resize.cs" />
+    <Compile Include="n_cs_engine.cs" />
+    <Compile Include="n_ct_client.cs" />
+    <Compile Include="n_cvgbenefit.cs" />
+    <Compile Include="n_cvgcategory.cs" />
+    <Compile Include="n_cvgoffering.cs" />
+    <Compile Include="n_cwizard.cs" />
+    <Compile Include="n_dataitem.cs" />
+    <Compile Include="n_dataitem_object.cs" />
+    <Compile Include="n_dataitem_string.cs" />
+    <Compile Include="n_date.cs" />
+    <Compile Include="n_dateinterval.cs" />
+    <Compile Include="n_dbobject.cs" />
+    <Compile Include="n_dbobject_ct.cs" />
+    <Compile Include="n_dwr_service_parm.cs" />
+    <Compile Include="n_enable.cs" />
+    <Compile Include="n_enable_coverage.cs" />
+    <Compile Include="n_enable_engine_customization.cs" />
+    <Compile Include="n_enable_porting.cs" />
+    <Compile Include="n_enable_property.cs" />
+    <Compile Include="n_enable_rexevents.cs" />
+    <Compile Include="n_enable_uc_standard.cs" />
+    <Compile Include="n_enable_uc_winapi.cs" />
+    <Compile Include="n_enable_uc_winapi_unicode.cs" />
+    <Compile Include="n_enable_unicode_conversion.cs" />
+    <Compile Include="n_enable_util.cs" />
+    <Compile Include="n_environment.cs" />
+    <Compile Include="n_environment_advantage.cs" />
+    <Compile Include="n_extcontact.cs" />
+    <Compile Include="n_gso.cs" />
+    <Compile Include="n_gsorelatedrule.cs" />
+    <Compile Include="n_gsorelatedrules.cs" />
+    <Compile Include="n_list.cs" />
+    <Compile Include="n_listofobjects.cs" />
+    <Compile Include="n_listofstrings.cs" />
+    <Compile Include="n_navigator.cs" />
+    <Compile Include="n_parser.cs" />
+    <Compile Include="n_participant.cs" />
+    <Compile Include="n_participantstatus.cs" />
+    <Compile Include="n_profile.cs" />
+    <Compile Include="n_provider_registration_key_srvc_mgr.cs" />
+    <Compile Include="n_ptaccums.cs" />
+    <Compile Include="n_ptebenefit.cs" />
+    <Compile Include="n_ptecategory.cs" />
+    <Compile Include="n_pterule.cs" />
+    <Compile Include="n_pterules.cs" />
+    <Compile Include="n_ptexceptions.cs" />
+    <Compile Include="n_relatedrule.cs" />
+    <Compile Include="n_rptebenefit.cs" />
+    <Compile Include="n_rptecategory.cs" />
+    <Compile Include="n_rs_engine.cs" />
+    <Compile Include="n_rs_report_arg_parm.cs" />
+    <Compile Include="n_rs_report_arg_save.cs" />
+    <Compile Include="n_rs_report_list_parm.cs" />
+    <Compile Include="n_rs_report_viewer_parm.cs" />
+    <Compile Include="n_rule.cs" />
+    <Compile Include="n_set.cs" />
+    <Compile Include="n_setofobjects.cs" />
+    <Compile Include="n_setofstrings.cs" />
+    <Compile Include="n_step.cs" />
+    <Compile Include="n_step_selectincludetype.cs" />
+    <Compile Include="n_step_selectrule.cs" />
+    <Compile Include="n_subscriber.cs" />
+    <Compile Include="n_subscriber_registration_key_srvc_mgr.cs" />
+    <Compile Include="n_substrings.cs" />
+    <Compile Include="n_table.cs" />
+    <Compile Include="n_table_nrev.cs" />
+    <Compile Include="n_table_part_accums.cs" />
+    <Compile Include="n_table_part_incl_excl_catg_struct.cs" />
+    <Compile Include="n_table_part_incl_excl_related_rule.cs" />
+    <Compile Include="n_tblcolumn.cs" />
+    <Compile Include="n_tblcolumn_date.cs" />
+    <Compile Include="n_tblcolumn_number.cs" />
+    <Compile Include="n_tblcolumn_varchar2.cs" />
+    <Compile Include="n_telephony_exception.cs" />
+    <Compile Include="n_title.cs" />
+    <Compile Include="n_tvnode.cs" />
+    <Compile Include="n_tvnode_benefit.cs" />
+    <Compile Include="n_tvnode_category.cs" />
+    <Compile Include="n_tvnode_clobenefit.cs" />
+    <Compile Include="n_tvnode_clocategory.cs" />
+    <Compile Include="n_tvnode_cloffering.cs" />
+    <Compile Include="n_tvnode_clrelatedrule.cs" />
+    <Compile Include="n_tvnode_clrelatedrules.cs" />
+    <Compile Include="n_tvnode_coverage.cs" />
+    <Compile Include="n_tvnode_cvgbenefit.cs" />
+    <Compile Include="n_tvnode_cvgcategory.cs" />
+    <Compile Include="n_tvnode_cvgoffering.cs" />
+    <Compile Include="n_tvnode_gso.cs" />
+    <Compile Include="n_tvnode_gsorelatedrule.cs" />
+    <Compile Include="n_tvnode_gsorelatedrules.cs" />
+    <Compile Include="n_tvnode_participant.cs" />
+    <Compile Include="n_tvnode_participant_accums.cs" />
+    <Compile Include="n_tvnode_participant_ptexceptions.cs" />
+    <Compile Include="n_tvnode_ptebenefit.cs" />
+    <Compile Include="n_tvnode_ptecategory.cs" />
+    <Compile Include="n_tvnode_pterule.cs" />
+    <Compile Include="n_tvnode_pterules.cs" />
+    <Compile Include="n_tvnode_ptexceptions.cs" />
+    <Compile Include="n_tvnode_relatedrule.cs" />
+    <Compile Include="n_tvnode_rptebenefit.cs" />
+    <Compile Include="n_tvnode_rptecategory.cs" />
+    <Compile Include="n_tvnode_subscriber.cs" />
+    <Compile Include="n_tvnode_subscriber_accums.cs" />
+    <Compile Include="n_tvnode_subscriber_ptexceptions.cs" />
+    <Compile Include="n_wizard.cs" />
+    <Compile Include="n_wizard_deleteptexception.cs" />
+    <Compile Include="n_wizard_deleterulexception.cs" />
+    <Compile Include="n_wizard_editptexception.cs" />
+    <Compile Include="n_wizard_editrulexception.cs" />
+    <Compile Include="n_wizard_newptexception.cs" />
+    <Compile Include="n_wizard_newrulexception.cs" />
+    <Compile Include="pfc_n_cst_resize.cs" />
+    <Compile Include="pfc_u_tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pfc_u_tabpg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="uo_bnftadj_compare_structure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uo_bnftadj_participant_info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uo_connection.cs" />
+    <Compile Include="uo_rule_display_navigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_about_tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_admin_sec_group_user_navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_admin_sec_group_user_navigator_loader.cs" />
+    <Compile Include="u_application.cs" />
+    <Compile Include="u_app_logo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_benefit_search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_bit_operators.cs" />
+    <Compile Include="u_bnftadj_ben_cat_struct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_bnftadj_ben_cat_struct_nav.cs" />
+    <Compile Include="u_bnftadj_client_ben_cat_struct_nav.cs" />
+    <Compile Include="u_bnftadj_participant_services.cs" />
+    <Compile Include="u_bnftadj_pending_claim_info.cs" />
+    <Compile Include="u_bnftadj_rule_args.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_bnftadj_rule_maint_loader.cs" />
+    <Compile Include="u_bnftadj_rule_maint_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cbx_list.cs" />
+    <Compile Include="u_cb_addremove_vertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cb_okcancel_horiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cc_ben_cat_structure_display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cc_ben_cat_structure_loader.cs" />
+    <Compile Include="u_cc_copy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cia_custom_base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_cladmin_common.cs" />
+    <Compile Include="u_client_bd_loader.cs" />
+    <Compile Include="u_client_bd_navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_client_casc_structure_loader.cs" />
+    <Compile Include="u_client_display_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_client_offg_structure_common.cs" />
+    <Compile Include="u_client_payprior_loader.cs" />
+    <Compile Include="u_client_rate_copy_display_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_client_rating_loader.cs" />
+    <Compile Include="u_client_structure_loader.cs" />
+    <Compile Include="u_client_structure_loader_tree_date.cs" />
+    <Compile Include="u_client_subs_xfer_structure_loader.cs" />
+    <Compile Include="u_client_xfer_casc_display_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_code_services.cs" />
+    <Compile Include="u_confidential_info_services.cs" />
+    <Compile Include="u_copyright.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_co_client_offg_design_display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_co_client_offg_design_loader.cs" />
+    <Compile Include="u_co_client_offg_gso_structure_loader.cs" />
+    <Compile Include="u_cue_card.cs" />
+    <Compile Include="u_data_server_base.cs" />
+    <Compile Include="u_data_server_singlesp_oracle.cs" />
+    <Compile Include="u_date_handler.cs" />
+    <Compile Include="u_directory_smart.cs" />
+    <Compile Include="u_drag_drop.cs" />
+    <Compile Include="u_dw_functions.cs" />
+    <Compile Include="u_email_address.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_encryptdecrypt.cs" />
+    <Compile Include="u_error.cs" />
+    <Compile Include="u_error_handler.cs" />
+    <Compile Include="u_external_function_win32.cs" />
+    <Compile Include="u_external_function_winapi.cs" />
+    <Compile Include="u_findnextrundate.cs" />
+    <Compile Include="u_get_rule_tables.cs" />
+    <Compile Include="u_gs_directory_smart.cs" />
+    <Compile Include="u_help_cb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_ia_application_base.cs" />
+    <Compile Include="u_ia_association.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_ia_datastore.cs" />
+    <Compile Include="u_ia_datawindow.cs" />
+    <Compile Include="u_ia_data_access.cs" />
+    <Compile Include="u_ia_data_cleaner.cs" />
+    <Compile Include="u_ia_external_function.cs" />
+    <Compile Include="u_ia_hiearchy_association.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_ia_notepad.cs" />
+    <Compile Include="u_ia_pba_navigator_base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_ia_rule_engine.cs" />
+    <Compile Include="u_ia_tab_base.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_ia_validation_handler.cs" />
+    <Compile Include="u_ia_wintrack_base.cs" />
+    <Compile Include="u_internet_constants.cs" />
+    <Compile Include="u_keyboard_control.cs" />
+    <Compile Include="u_leds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_logo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_mle_copyright_statement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_mle_move_bar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_modal_cb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_mother_of_bencat_nav_loader.cs" />
+    <Compile Include="u_mother_of_bencat_struc_display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_mrktg_pricing_copy_display_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_mrktg_pricing_copy_structure_loader.cs" />
+    <Compile Include="u_mrktg_pricing_structure_loader.cs" />
+    <Compile Include="u_mrktg_rate_copy_structure_loader.cs" />
+    <Compile Include="u_notepad_audit_table.cs" />
+    <Compile Include="u_notepad_benefit_category.cs" />
+    <Compile Include="u_notepad_benefit_province.cs" />
+    <Compile Include="u_notepad_bnft_package_detail.cs" />
+    <Compile Include="u_notepad_claim.cs" />
+    <Compile Include="u_notepad_client.cs" />
+    <Compile Include="u_notepad_client_catg_fund.cs" />
+    <Compile Include="u_notepad_client_offering.cs" />
+    <Compile Include="u_notepad_client_pricing.cs" />
+    <Compile Include="u_notepad_clm_correspondence.cs" />
+    <Compile Include="u_notepad_cob_idcard.cs" />
+    <Compile Include="u_notepad_participant.cs" />
+    <Compile Include="u_notepad_participant_accums.cs" />
+    <Compile Include="u_notepad_participant_condition.cs" />
+    <Compile Include="u_notepad_participant_incl_excl.cs" />
+    <Compile Include="u_notepad_ppo_eap_cap_org.cs" />
+    <Compile Include="u_notepad_provider.cs" />
+    <Compile Include="u_notepad_provider_network.cs" />
+    <Compile Include="u_notepad_rfp_renewal.cs" />
+    <Compile Include="u_notepad_subscriber.cs" />
+    <Compile Include="u_notepad_sub_slct_offg_catg.cs" />
+    <Compile Include="u_notepad_tooth_history.cs" />
+    <Compile Include="u_offeringstructure.cs" />
+    <Compile Include="u_pba_menu_navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_pba_menu_navigator_loader.cs" />
+    <Compile Include="u_pbcat_services.cs" />
+    <Compile Include="u_pict_text.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_plugin_access.cs" />
+    <Compile Include="u_powerobject.cs" />
+    <Compile Include="u_ppo_pricing_avail_ben_cat_nav.cs" />
+    <Compile Include="u_ppo_pricing_avail_ben_cat_struct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_progress_bar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_provider_pricing_avail_ben_cat_nav.cs" />
+    <Compile Include="u_provider_pricing_avail_ben_cat_struct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_provider_types_avail_ben_cat_nav.cs" />
+    <Compile Include="u_provider_types_avail_ben_cat_struct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_provider_types_sel_ben_cat_nav.cs" />
+    <Compile Include="u_provider_types_sel_ben_cat_struct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_qs_column_association.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_quick_plugin_access.cs" />
+    <Compile Include="u_release_version.cs" />
+    <Compile Include="u_repview.cs" />
+    <Compile Include="u_revsqlgen_parser.cs" />
+    <Compile Include="u_revsqlgen_table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_rights_association.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_rule_engine.cs" />
+    <Compile Include="u_rule_engine_oracle_pipes.cs" />
+    <Compile Include="u_rule_engine_tuxedo.cs" />
+    <Compile Include="u_rule_services.cs" />
+    <Compile Include="u_security_login.cs" />
+    <Compile Include="u_service_manager.cs" />
+    <Compile Include="u_sle_search_and_select.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_splitbar_vertical_custom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_sql_loader_export_assoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_standard_access.cs" />
+    <Compile Include="u_statement_messages_display_nav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_statement_messages_loader.cs" />
+    <Compile Include="u_stplitbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_stplitbar_horisontal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_stplitbar_vertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_string_handler.cs" />
+    <Compile Include="u_tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_tabpage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tabpage_call_history.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tabpage_participant_accums.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tabpage_profile_detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tabpage_ptexception_general.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tabpage_ptexception_rules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_tblview.cs" />
+    <Compile Include="u_tip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_title.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_transaction_object.cs" />
+    <Compile Include="u_treeview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="u_wintrack.cs" />
+    <Compile Include="u_wizardpage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_confirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_createexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_createruleexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_defineruleexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_deleteinfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_deleteptexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_deleterulexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_effexpdates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_exceptiondates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_exceptiondesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_exceptiontype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_geteditinfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_geteditptexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_geteditrulexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_includetype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_includetype_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_ptexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_ruleexceptiondates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_ruleexceptiondesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_ruleexceptiontype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_saveeditinfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_saveeditptexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_saveeditrulexception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_selectadmincategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_selectfromclo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_selectfromclo_ruleexc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_selectfromgso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="u_wizardpage_selectrule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vc_enable_panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="w_address_md.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_code_md.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_cue_card_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_group_maint_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_plan_feature_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_sec_resource_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_sec_rights_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_admin_sec_users_groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_audit_benft_adju_participant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_audit_conf_letter_crit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_audit_conf_letter_cycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_audit_conf_letter_request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_audit_web_criteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_accum_mapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_admin_calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_bnft_exclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_bnft_ineligible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_batch_mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_batch_mode_with_kfi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_enrol_dependent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_enrol_provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_hcsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_interactive_mess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_claim_search_mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_client_offering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_components.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_daily_balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_dental_kfi_claim_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_dup_provider_disp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_dur_messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_gso_client_ancestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_gso_rule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_gso_rule_selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_id_card_billing_div.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_kfi_balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_logic_rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_log_rules_copyspecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_maintain_currency_rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_maintain_payment_cycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_maint_provider_network.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_maint_provider_types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_maint_provider_types_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_manufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_new_claim_hcsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_new_claim_subs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_ocr_verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_online_provider_enrolment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_participant_accum_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_participant_condition_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_pending_claim_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_ppo_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_ppo_provider_prices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_provider_assoc_dir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_provider_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_provider_load_date_rsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_provider_prices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_provider_web_eft_attributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_province_provider_types_assoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_prvdr_type_bnft_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_qbf_claim_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_qbf_pep_claim_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_ramq_max.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_rule_attach_lookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_rule_definitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_rule_lookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_rule_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_rule_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_tooth_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_tooth_history_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_tooth_history_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_bnftadj_vision_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_branchstructurebrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_caller_profiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_categoryrulebrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_change_subscriber_date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_check_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_choose_code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_accounting_commission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_accounting_revenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_cascade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_empl_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_engine_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_enrollment_approval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_enrollment_file_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_enrollment_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_enrollment_massterm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_exapp_effdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_id_card_summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_manual_enr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_mini_qbf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_offg_bill_div_map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_package_exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_prov_of_residence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_retromonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_retro_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_subscriber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_sub_accums_xfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_sub_xfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_sub_xfer_cdf_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_sub_xfer_date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_cladmin_sub_xfer_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_claim_audit_review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_claim_cob_idcard_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_claim_ee_engine_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_claim_enroll_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_claim_form_rejection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_billing_contact_address_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_bill_div_address_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_bill_div_new_row_eff_date_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_legend_browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_new_row_eff_date_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_offg_vision_rx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_rating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_client_rating_eff_dt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_clminfo_summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_clolegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_close_claim_batch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_contact_propagate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_contact_propagate_batch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_contact_update_row_eff_date_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_contribution_balancing_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_co_client_offg_design.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_co_client_offg_gso_structure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_create_ppmo_ini_rows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_dental_batch_claim_entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_dental_batch_claim_id_setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_display_groups_for_user_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_eff_exp_asof_date_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_enable_explorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_enrolment_recieved_date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_exceptionreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_exclude_statement_message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_frozen_premium_eff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_gso_batch_excep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_gso_batch_pick_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_gso_batch_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_gso_batch_set_max_no.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_hcsa_batch_contribs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_hcsa_batch_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_hcsa_benefit_year_rsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_hcsa_maintain_contribs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_master_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_mdi_base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_mdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_query_by_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ia_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_id_card_logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_id_card_select_mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_kfi_bal_category_selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_kfi_form_reroute_option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_kfi_qbf_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_kfi_queue_option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_kfi_status_monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_launch_payroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_link_detail_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_hcsa_options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_internal_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_mailing_arrangements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_mailing_inserts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_payment_threshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_predefined_notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_pre_enrolment_prefix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_procedure_codes_suppress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_psa_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_psa_options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_statement_content_rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_statement_messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_statement_sort_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maintain_webapp_options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maint_web_booklet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maint_web_booklet_mapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_maint_web_booklet_map_defn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_manual_profile_sub_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mdi_benefit_adj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mdi_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mdi_marketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_benefit_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_bnft_catg_struct_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_bnft_prov_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_catg_bnft_structure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_bill_div_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_offg_row_eff_date_rsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_pricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_pricing_batch_load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_pricing_batch_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_pricing_copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_pricing_update_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_rate_copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_client_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_condl_bnft_rfu_criteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_copy_facility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_co_bnft_catg_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_co_bnft_catg_struct_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_drug_package_prices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_external_agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_fee_guide_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_internal_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_mac_class_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_package_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_payprior_coverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_pricing_batch_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_reason_for_benefit_use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_reason_for_use_maint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_rfp_renewal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_mrktg_vision_pricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_new_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_oltp_transaction_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_organization_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_paramed_max_election_categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_partaccumlegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_participant_benefit_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_participant_exceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_payment_cycle_dates_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_payment_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_payment_detail_hcsa_contrib_amt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_audit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_control_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_menu_navigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_product_supp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_secure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pba_show_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pending_claims_search_mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pharmacy_scorecard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_printzoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_prior_procedures_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_product_listing_agreements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_progress_bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_provider_connect_registration_key_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_provider_connect_search_web_user_id_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_province_mkup_legend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_ptelegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_pymt_account_balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_qbf_caller_profiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_qbf_for_pbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_qbf_sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_query_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_reg_key_letter_bd_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_reg_key_letter_client_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_revision_table_sql_generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_revision_table_sql_generator_dispsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_revision_table_sql_generator_errors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_right_click_key_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_arg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_arg_entity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_arg_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_export_parm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_send_parm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rs_report_viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_rulelegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_select_view_response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_showuniqueness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_show_billing_label.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_show_id_card_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_show_id_contact_address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_show_participant_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_show_provider_address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_sortrowsdialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_special_programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_sql_loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_subscriber_notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_subscriber_password_notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_subs_treetab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_supplementary_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_test_mle_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_tpa_selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_trigger_batch_job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_tuition_course_update_letter_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_web_logon_hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_web_security_lookup_rsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_web_security_search_rsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_web_user_security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_deleteptexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_deleterulexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_editptexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_editrulexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_newptexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="w_wizard_newruleexception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="w_ia_mdi_base.resx">
+      <DependentUpon>w_ia_mdi_base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="w_mdi_main.resx">
+      <DependentUpon>w_mdi_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

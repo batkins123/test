@@ -1,0 +1,9 @@
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\bin\Debug\WFApp.exe.config
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\bin\Debug\WFApp.exe
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\bin\Debug\WFApp.pdb
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\WFApp.Properties.Resources.resources
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\WFApp.csproj.GenerateResource.Cache
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\WFApp.exe
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\WFApp.pdb
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\GSAWindows.w_mdi_main.resources
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\WFApp\obj\Debug\GSAWindows.w_ia_mdi_base.resources

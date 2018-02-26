@@ -1,0 +1,6 @@
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\GSAWindowsParser.exe.config
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\GSAWindowsParser.exe
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\bin\Debug\GSAWindowsParser.pdb
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\obj\Debug\GSAWindowsParser.csprojResolveAssemblyReference.cache
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\obj\Debug\GSAWindowsParser.exe
+C:\Users\batki\Documents\Source Code\GSAWindowsParser\GSAWindowsParser\obj\Debug\GSAWindowsParser.pdb
